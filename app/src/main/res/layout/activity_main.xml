@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ff333333"
+    android:id="@+id/rtc_entrance_main"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="TRTC视频自定义采集示例"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_room_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入房间号："
+            android:textColor="#00A66B" />
+
+        <EditText
+            android:id="@+id/et_input_room_id"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginTop="5dp"
+            android:background="#EFEFEF"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_room_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入用户名："
+            android:textColor="#00A66B" />
+
+        <EditText
+            android:id="@+id/et_input_username"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginTop="5dp"
+            android:background="#EFEFEF" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_enter_room_buffer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bt_enter_room_texture"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="60dp"
+        android:background="#00A66B"
+        android:text="进入房间buffer"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/bt_enter_room_texture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_sdkVersion"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="60dp"
+        android:background="#00A66B"
+        android:text="进入房间texture"
+        android:textColor="@android:color/white" />
+    <TextView
+        android:id="@+id/tv_sdkVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/white"
+        android:text="sdk版本号"/>
+
+
+</RelativeLayout>

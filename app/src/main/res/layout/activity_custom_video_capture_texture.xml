@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomVideoCaptureTextureActivity">
+
+    <com.chaoli.mycustomvideocapturedemo.customView.GlRenderView
+        android:id="@+id/mGLSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_showInfo2"
+        android:layout_width="150dp"
+        android:layout_height="500dp"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginTop="50dp"
+        android:text="YUV"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="15dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+        <ImageView
+            android:id="@+id/trtc_ic_back2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/custom_ic_back"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/trtc_tv_room_number2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="1111"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/trtc_tc_cloud_view_12"
+        android:layout_width="90dp"
+        android:layout_height="160dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="80dp" />
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/trtc_tc_cloud_view_22"
+        android:layout_width="90dp"
+        android:layout_height="160dp"
+        android:layout_above="@id/trtc_tc_cloud_view_12"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp" />
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/trtc_tc_cloud_view_32"
+        android:layout_width="90dp"
+        android:layout_height="160dp"
+        android:layout_above="@id/trtc_tc_cloud_view_22"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp" />
+
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/trtc_tc_cloud_view_42"
+        android:layout_width="90dp"
+        android:layout_height="160dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="80dp" />
+
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/trtc_tc_cloud_view_52"
+        android:layout_width="90dp"
+        android:layout_height="160dp"
+        android:layout_above="@id/trtc_tc_cloud_view_42"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp" />
+
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/trtc_tc_cloud_view_62"
+        android:layout_width="90dp"
+        android:layout_height="160dp"
+        android:layout_above="@id/trtc_tc_cloud_view_52"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp" />
+
+
+</RelativeLayout>
